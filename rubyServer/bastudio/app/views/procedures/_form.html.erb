@@ -1,0 +1,31 @@
+<%= form_with model: @procedure do |form| %>
+
+  <% if @procedure.errors.any? %>
+    <div id="error_explanation">
+        <h2>
+          <% pluralize(@article.errors.count, "Ошибка") %> обнаружено
+        </h2>
+    </div>
+    <ul>
+      <% @procedure.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+
+  <p>
+     <%= form.label :title, 'Название процедуры' %><br>
+     <%= form.text_field :title %>
+   </p>
+
+   <p>
+     <%= form.label :description, 'Описание процедуры' %><br>
+     <%= form.text_area :description %>
+   </p>
+
+   <p>
+     <%= form.submit 'Создать' %>
+   </p>
+
+ <% end %>

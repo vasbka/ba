@@ -1,0 +1,25 @@
+<h1>Список процедур</h1>
+
+<div class="new">
+  <%= link_to 'Добавить новую процедуру', new_procedure_path %>
+</div>
+
+<table>
+  <tr>
+    <th>Название процедуры</th>
+    <th>Описание процедуры</th>
+    <th colspant="3"></th>
+  </tr>
+
+  
+  <% @procedures.each do |procedure| %>
+    <tr>
+      <td class="info"><%= procedure.title %></td>
+      <td class="info"><%= procedure.description %></td>
+      <td><%= link_to 'Показать подробнее', procedure_path(procedure) %></td>
+      <td><%= link_to 'Редактивароть', edit_procedure_path(procedure) %></td>
+      <td><%= button_to 'Удалить', procedure_path(procedure), method: :delete, :onclick => "return confirm('Точно нужно удалить?')" %></td>
+
+    </tr>
+  <% end %>
+</table>
