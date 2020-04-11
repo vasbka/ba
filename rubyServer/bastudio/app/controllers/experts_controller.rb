@@ -5,6 +5,7 @@ class ExpertsController < ApplicationController
 
   def show
     @expert = Expert.find(params[:id])
+
   end
 
   def new
@@ -14,13 +15,23 @@ class ExpertsController < ApplicationController
 
   def edit
     @expert = Expert.find(params[:id])
+    @procedures = Procedure.all
   end
 
   def create
     @expert = Expert.new(expert_params)
-    # render plain: ExpProcedure.qwer
-    # @expProc = ExpProcedure.new(expert_id: '1', procedure_id: params[:procedure]['8']['id'], price: '10')
-    # render plain: @expProc.save
+    @expert.save
+    #@procedures = procedure_params
+
+    @expProcedure = {}
+    @expProcedure[:expert_id] = @expert[:id]
+    procedure_params.each do |procedure|
+      if procedure[1][:price].present? then
+        @expProcedure[:procedure_id] = procedure[1][:id]
+        @expProcedure[:price] = procedure[1][:price]
+        ExpProcedure.new(@expProcedure).save
+      end
+    end
     if @expert.save
       redirect_to @expert
     else

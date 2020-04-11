@@ -1,16 +1,16 @@
 class Expert < ApplicationRecord
   has_many :exp_procedures
-  has_many :procedures, through: :exp_procedures
+  has_many :procedures, through: :exp_procedures, dependent: :destroy
 
   def as_json(options={})
-   super(options.merge methods: [:procedures_json])
- end
-
- def procedures_json
-    procedures.as_json(expertId: self.id)
+   super(options.merge methods: [:expertProcedures])
   end
 
-  def exp_procedures
+  def expertProcedures
+    exp_procedures
+  end
+
+  def expProceduresJson
     exp_procedures.as_json
   end
 

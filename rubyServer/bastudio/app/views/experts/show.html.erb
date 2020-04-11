@@ -22,3 +22,7 @@
   <strong>Номер телефона:</strong>
   <%= @expert.phoneNumber %>
 </p>
+
+<% @expert.expertProcedures.each do |expertProcedure| %>
+  <%= Procedure.find(expertProcedure[:procedure_id])[:title] %> : <%= expertProcedure[:price] %>
+<% end %>

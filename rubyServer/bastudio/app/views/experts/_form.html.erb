@@ -38,21 +38,17 @@
   <%= form.text_field :phoneNumber %>
 </p>
 
-<h2>Добавить процедуры:</h2>
 <% if @procedures %>
-<%  @procedures.each do |procedure| %>
-<div>
-  <div class="">
-    <%= form.label :isAvailableProcedure, "Учитывать процедуру " + procedure.title %>
-    <%= form.check_box :procedures, name: "procedure[" + procedure.id.to_s + "][available]" %>
-    <%= form.hidden_field :procedures, name: 'procedure[' + procedure.id.to_s + '][id]', :value => procedure.id %>
+  <h2>Добавить процедуры:</h2>
+  <%  @procedures.each do |procedure| %>
+  <div>  
+    <div class="">
+      <%= form.hidden_field :procedures, name: 'procedure[' + procedure.id.to_s + '][id]', :value => procedure.id %>
+      <%= form.label :isAvailableProcedure, "Учитывать процедуру " + procedure.title %>
+      <%= form.number_field  :procedures, name: 'procedure[' + procedure.id.to_s + '][price]' %>
+    </div>
   </div>
-  <div class="">
-    <%= form.label :price, 'Цена:' %>
-    <%= form.number_field  :procedures, name: 'procedure[' + procedure.id.to_s + '][price]' %>
-  </div>
-</div>
-<% end %>
+  <% end %>
 <% end %>
 
 <p>
