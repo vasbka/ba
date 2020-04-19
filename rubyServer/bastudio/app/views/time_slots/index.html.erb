@@ -1,1 +1,97 @@
-hello
+<%= stylesheet_link_tag "time_slots" %>
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <%= form_with model: @timeSlot do |form| %>
+
+      <div id="form">
+        <select name="procedures" id="procedures"></select>
+        <div id="detailForm">
+          <span>Время начала</span>
+          <span class="startTimeWrapper"></span>
+          <div id="clientInformation">
+            <div>Информация о клиенте:</div>
+            <input type="text" id="phoneNumber" placeholder="Номер телефона">
+            <input type="text" id="firstName" placeholder="Имя">
+            <input type="text" id="lastName" placeholder="Фамилия">
+          </div>
+        </div>
+      </div>
+
+    <% end %>
+  </div>
+</div>
+
+<div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+  <div class="cd-schedule__timeline">
+    <ul id="test">
+      <li class="time"><span>09:00</span></li>
+      <li class="time"><span>09:30</span></li>
+      <li class="time"><span>10:00</span></li>
+      <li class="time"><span>10:30</span></li>
+      <li class="time"><span>11:00</span></li>
+      <li class="time"><span>11:30</span></li>
+      <li class="time"><span>12:00</span></li>
+      <li class="time"><span>12:30</span></li>
+      <li class="time"><span>13:00</span></li>
+      <li class="time"><span>13:30</span></li>
+      <li class="time"><span>14:00</span></li>
+      <li class="time"><span>14:30</span></li>
+      <li class="time"><span>15:00</span></li>
+      <li class="time"><span>15:30</span></li>
+      <li class="time"><span>16:00</span></li>
+      <li class="time"><span>16:30</span></li>
+      <li class="time"><span>17:00</span></li>
+      <li class="time"><span>17:30</span></li>
+      <li class="time"><span>18:00</span></li>
+    </ul>
+  </div> <!-- .cd-schedule__timeline -->
+
+  <div class="cd-schedule__events">
+    <ul>
+      <% @experts.each do |expert| %>
+      <li class="cd-schedule__group">
+        <div class="cd-schedule__top-info"><span><%= expert.lastName %></span></div>
+        <ul>
+
+          <% @timeSlots.where(:date => Date.today).each do |timeSlot|  %>
+          <% unless timeSlot.exp_procedures.where(:expert_id => expert.id).empty? %>
+          <li class="cd-schedule__event">
+            <a data-start="<%= timeSlot.startTime.to_s(:time) %>" data-end="<%= timeSlot.endTime.to_s(:time) %>" data-event="event-1" href="#0">
+              <em class="cd-schedule__name">
+                <% timeSlot.exp_procedures.where(:expert_id => expert.id).each do |expProcedure| %>
+                <%= expProcedure.procedure.title %> <br>
+                <% end %>
+              </em>
+            </a>
+          </li>
+          <% end %>
+          <% end %>
+        </ul>
+      </li>
+      <% end %>
+
+
+
+    </ul>
+
+  <div class="cd-schedule-modal">
+    <header class="cd-schedule-modal__header">
+      <div class="cd-schedule-modal__content">
+        <span class="cd-schedule-modal__date"></span>
+        <h3 class="cd-schedule-modal__name"></h3>
+      </div>
+
+      <div class="cd-schedule-modal__header-bg"></div>
+    </header>
+
+    <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+  </div>
+
+  <div class="cd-schedule__cover-layer"></div>
+</div> <!-- .cd-schedule -->
+
+<%= javascript_pack_tag 'time_slots', 'data-turbolinks-track': 'reload' %>

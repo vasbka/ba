@@ -1,0 +1,13 @@
+<%= form_with model: @time_slot do |form| %>
+
+  <%# <%= form.label :exp_procedure_id, 'Процедура' %><br>
+  <%# <%= form.grouped_collection_select :exp_procedure_id, Expert.order(:lastName), :exp_procedures, :toString, :id, :toString, include_blank: true %> %> %>
+
+  <%= date_field(:time_slot, :date) %>
+  <%= time_field(:time_slot, :startTime) %>
+  <%= time_field(:time_slot, :endTime) %>
+  <p>
+   <%= form.submit 'Создать' %>
+  </p>
+
+ <% end %>

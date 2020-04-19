@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_12_223811) do
+ActiveRecord::Schema.define(version: 2020_04_19_003549) do
+
+  create_table "clients", force: :cascade do |t|
+    t.string "firstName"
+    t.string "lastName"
+    t.string "phoneNumber"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "exp_procedures", force: :cascade do |t|
     t.integer "price"
@@ -22,13 +30,11 @@ ActiveRecord::Schema.define(version: 2020_03_12_223811) do
     t.index ["procedure_id"], name: "index_exp_procedures_on_procedure_id"
   end
 
-  create_table "expert_procedures", force: :cascade do |t|
-    t.integer "expert_id", null: false
-    t.integer "procedure_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["expert_id"], name: "index_expert_procedures_on_expert_id"
-    t.index ["procedure_id"], name: "index_expert_procedures_on_procedure_id"
+  create_table "exp_procedures_time_slots", id: false, force: :cascade do |t|
+    t.integer "time_slot_id"
+    t.integer "exp_procedure_id"
+    t.index ["exp_procedure_id"], name: "index_exp_procedures_time_slots_on_exp_procedure_id"
+    t.index ["time_slot_id"], name: "index_exp_procedures_time_slots_on_time_slot_id"
   end
 
   create_table "experts", force: :cascade do |t|
@@ -41,11 +47,6 @@ ActiveRecord::Schema.define(version: 2020_03_12_223811) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "experts_procedures", id: false, force: :cascade do |t|
-    t.integer "expert_id", null: false
-    t.integer "procedure_id", null: false
-  end
-
   create_table "procedures", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -53,8 +54,15 @@ ActiveRecord::Schema.define(version: 2020_03_12_223811) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "time_slots", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "price"
+    t.date "date"
+    t.time "startTime"
+    t.time "endTime"
+  end
+
   add_foreign_key "exp_procedures", "experts"
   add_foreign_key "exp_procedures", "procedures"
-  add_foreign_key "expert_procedures", "experts"
-  add_foreign_key "expert_procedures", "procedures"
 end

@@ -1,24 +1,22 @@
-<h1>Список процедур</h1>
-
-<div class="new">
+<div class="button">
   <%= link_to 'Добавить новую процедуру', new_procedure_path %>
 </div>
 
-<table>
-  <tr>
-    <th>Название процедуры</th>
-    <th>Описание процедуры</th>
-    <th colspant="3"></th>
+<h1>Список процедур</h1>
+<table class="table">
+  <tr class="table__row">
+    <th class="table__title">Название процедуры</th>
+    <th class="table__title">Описание процедуры</th>
   </tr>
 
-  
+
   <% @procedures.each do |procedure| %>
-    <tr>
-      <td class="info"><%= procedure.title %></td>
-      <td class="info"><%= procedure.description %></td>
-      <td><%= link_to 'Показать подробнее', procedure_path(procedure) %></td>
-      <td><%= link_to 'Редактивароть', edit_procedure_path(procedure) %></td>
-      <td><%= button_to 'Удалить', procedure_path(procedure), method: :delete, :onclick => "return confirm('Точно нужно удалить?')" %></td>
+    <tr  class="talbe__row">
+      <td class="table__info"><%= procedure.title %></td>
+      <td class="table__info"><%= procedure.description %></td>
+      <td class="button"><%= link_to 'Показать подробнее', procedure_path(procedure) %></td>
+      <td class="button"><%= link_to 'Редактивароть', edit_procedure_path(procedure) %></td>
+      <td class="remove-button"><%= button_to 'Удалить', procedure_path(procedure), method: :delete, :onclick => "return confirm('Точно нужно удалить?')" %></td>
 
     </tr>
   <% end %>

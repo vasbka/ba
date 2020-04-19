@@ -1,0 +1,34 @@
+// Place all the styles related to the Experts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.experts {
+  &-menu {
+    &__item {
+      display: inline-block;
+    
+    }
+  }
+  &__menu {
+    margin-bottom: 10px;
+  }
+  &-table {
+    font-size: 16px;
+    &__title,
+    &__info {
+      padding: 3px 6px;
+    };
+    &__row {
+      background-color: #eb278d;
+    };
+    &__title {
+      color: #FFF;
+      text-align: center;
+    };
+    &__info {
+      border: 1px solid black;
+      background: rgba(238, 46, 146, 0.2);
+    };
+  }
+}

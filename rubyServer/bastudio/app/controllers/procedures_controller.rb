@@ -1,6 +1,9 @@
 class ProceduresController < ApplicationController
   def index
     @procedures = Procedure.all
+    unless params[:expert_id].nil?
+      @procedures = Procedure.where(:id => ExpProcedure.where(:expert_id => params[:expert_id]).map { |expProcedure| expProcedure.procedure_id  });
+    end
   end
 
   def show
