@@ -14,38 +14,52 @@
 <% end %>
 
 <p>
-  <%= form.label :firstName, 'Имя' %>
-  <%= form.text_field :firstName %>
+  <%= form.label :firstName, 'Имя', class: 'form__label' %>
+  <%= form.text_field :firstName, class: 'form__input' %>
 </p>
 
 <p>
-  <%= form.label :lastName, 'Фамилия' %>
-  <%= form.text_field :lastName %>
+  <%= form.label :lastName, 'Фамилия', class: 'form__label' %>
+  <%= form.text_field :lastName, class: 'form__input' %>
 </p>
 
 <p>
-  <%= form.label :secondName, 'Отчетсво' %>
-  <%= form.text_field :secondName %>
+  <%= form.label :secondName, 'Отчетсво', class: 'form__label' %>
+  <%= form.text_field :secondName, class: 'form__input' %>
 </p>
 
 <p>
-  <%= form.label :description, 'Описание мастера' %>
-  <%= form.text_field :description %>
+  <%= form.label :description, 'Описание мастера', class: 'form__label' %>
+  <%= form.text_field :description, class: 'form__input' %>
 </p>
 
 <p>
-  <%= form.label :phoneNumber, 'Номер телефона мастера' %>
-  <%= form.text_field :phoneNumber %>
+  <%= form.label :phoneNumber, 'Номер телефона мастера', class: 'form__label' %>
+  <%= form.text_field :phoneNumber, class: 'form__input' %>
 </p>
+
+Фото мастера:
+<img class="form__photo" src="<%= "/" + ApplicationController::PICTURE_FOLDER + "/experts/" + @expert.id.to_s + ".jpg" %>" alt="">
+<%= form.file_field :picture, class: "form__label" %>
 
 <% if @procedures %>
   <h2>Добавить процедуры:</h2>
   <%  @procedures.each do |procedure| %>
-  <div>  
-    <div class="">
+  <div>
+    <div class="form__subform">
       <%= form.hidden_field :procedures, name: 'procedure[' + procedure.id.to_s + '][id]', :value => procedure.id %>
-      <%= form.label :isAvailableProcedure, "Учитывать процедуру " + procedure.title %>
-      <%= form.number_field  :procedures, name: 'procedure[' + procedure.id.to_s + '][price]' %>
+      Название процедуры: <%= procedure.title %>
+      <% if @expert.exp_procedures.where(:procedure_id => procedure.id).first.present? %>
+        Цена:<%= form.number_field  :procedures,
+          name: 'procedure[' + procedure.id.to_s + '][price]',
+          value: @expert.exp_procedures.where(:procedure_id => procedure.id).first.price %>
+        Вермя: <%= form.number_field  :procedures,
+          name: 'procedure[' + procedure.id.to_s + '][time]',
+          value: @expert.exp_procedures.where(:procedure_id => procedure.id).first.time_consume %>
+      <% else %>
+        Цена:<%= form.number_field  :procedures, name: 'procedure[' + procedure.id.to_s + '][price]'%>
+        Вермя: <%= form.number_field  :procedures, name: 'procedure[' + procedure.id.to_s + '][time]' %>
+      <% end %>
     </div>
   </div>
   <% end %>

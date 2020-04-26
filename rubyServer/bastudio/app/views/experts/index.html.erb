@@ -10,15 +10,20 @@
 
   <table class="table" cellspacing="0">
     <tr class="table__row">
+      <th class="table__title">Фотография</th>
       <th class="table__title">Фамилия</th>
       <th class="table__title">Имя</th>
       <th class="table__title">Отчетсво</th>
       <th class="table__title">Описание</th>
       <th class="table__title">Номер телефона</th>
       <th class="table__title" colspan="1">Процедуры</th>
+      <th class="table__title" colspan="3">Процедуры</th>
     </tr>
     <% @experts.each do |expert| %>
       <tr clase="table__row">
+        <td class="table__info info__picture">
+          <img src="<%= "/" + ApplicationController::PICTURE_FOLDER + "/experts/" + expert.id.to_s + ".jpg" %>" alt="">
+        </td>
         <td class="table__info"><%= expert.lastName %></td>
         <td class="table__info"><%= expert.firstName %></td>
         <td class="table__info"><%= expert.secondName %></td>
@@ -29,9 +34,13 @@
             <%= procedure.title %> : <%= expert.exp_procedures.where(:procedure_id => procedure.id).first.price %> <br>
           <% end %>
         </td>
-        <td class="button"><%= link_to 'Показать детальнее', expert_path(expert) %></td>
-        <td class="button"><%= link_to 'Изменить', edit_expert_path(expert) %></td>
-        <td class="remove-button"><%= button_to 'Удалить', expert_path(expert), method: :delete, :onclick => "return confirm('Точно нужно удалить?')" %></td>
+        <td class="table__info"> <%= link_to 'Показать детальнее', expert_path(expert) %></td>
+        <td class="table__info"><%= link_to 'Изменить', edit_expert_path(expert) %></td>
+        <td class="table__info">
+          <div class="remove-button">
+            <%= button_to 'Удалить', expert_path(expert), method: :delete, :onclick => "return confirm('Точно нужно удалить?')" %>
+          </div>
+        </td>
       </tr>
     <% end %>
   </table>

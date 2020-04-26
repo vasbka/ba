@@ -6,8 +6,7 @@
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
  */
@@ -44,6 +43,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  height: 100%;
+  background: rgba(222, 162, 232, 0.52);
 }
 ol, ul {
 	list-style: none;
@@ -62,7 +63,26 @@ table {
 }
 html {
   font-family: 'Arial';
+  height: 100%;
 }
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
 .header {
   background: #9e00a7;
   .menu {
@@ -80,6 +100,64 @@ html {
     }
   }
 }
+
+.show-body {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  &__dib {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  &__picture-container {
+    justify-content: center;
+    img {
+      border: 1px solid #9e00a7;
+      border-radius: 15px;
+      height: 700px;
+      align-items: center;
+    }
+  }
+  &__information {
+    flex-direction: column;
+    .information__field {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row;
+      font-size: 32px;
+      margin: 2px 0;
+      .title {
+        margin-right: 4px;
+      }
+      .value {
+        flex-direction: column;
+        table {
+          font-size: 18px;
+          th {
+            font-weight: bold;
+            width: 200px;
+          }
+          td {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.body__title {
+  font-size: 24px;
+  font-size: Arial;
+  text-align: center;
+}
+
 .button,
 .remove-button input {
   font-size: 16px;
@@ -122,7 +200,7 @@ html {
     background-color: #eb278d;
   };
   &__title {
-    font-size: 20px;    
+    font-size: 20px;
     font-weight: bold;
     color: #FFF;
     text-align: center;
@@ -131,4 +209,11 @@ html {
     border: 1px solid black;
     background: rgba(238, 46, 146, 0.2);
   };
+}
+
+.info {
+  &__picture img {
+    width: 200px;
+    height: 200px;
+  }
 }

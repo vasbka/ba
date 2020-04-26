@@ -1,30 +1,46 @@
 <%= stylesheet_link_tag "time_slots" %>
 <script>document.getElementsByTagName("html")[0].className += " js";</script>
 
-<div id="myModal" class="modal">
+<div class="body__title" id="date" data-attr-date="<%= @date %>"><%= @date %> - <%= @dayName %></div>
+
+<div id="create-time-slot-modal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <%= form_with model: @timeSlot do |form| %>
-
+    <%= form_with model: @timeSlot, url: "/time_slots" do |form| %>
       <div id="form">
-        <select name="procedures" id="procedures"></select>
+        <!-- <select multiple name="procedures" id="form__procedures"></select> -->
+        <%= select_tag(:procedures, [], {:multiple => true}) %>
         <div id="detailForm">
           <span>Время начала</span>
-          <span class="startTimeWrapper"></span>
+          <%= time_select(:detail_form, :start_time, {:minute_step => 15}) %>
+
           <div id="clientInformation">
             <div>Информация о клиенте:</div>
-            <input type="text" id="phoneNumber" placeholder="Номер телефона">
-            <input type="text" id="firstName" placeholder="Имя">
-            <input type="text" id="lastName" placeholder="Фамилия">
+            <%= form.label :client_phone_number, 'Номер телефона' %>
+            <%= form.text_field :client_phone_number %>
+            <%= form.label :client_first_name, 'Имя' %>
+            <%= form.text_field :client_first_name %>
           </div>
+          <%= form.hidden_field :date, value: @date %>
+          <%= form.hidden_field :expert_id %>
+          <%= form.submit 'Обработать' %>
+          <% end %>
         </div>
       </div>
-
-    <% end %>
   </div>
 </div>
 
+<div class="time-slot__previous-date">
+  <a href="/time_slots/<%= (@date - 1.days).strftime("%Y%m%d") %>">
+    Предыдущий день
+  </a>
+</div>
+<div class="time-slot__next-date">
+  <a href="/time_slots/<%= (@date + 1.days).strftime("%Y%m%d") %>">
+    Следующий день
+  </a>
+</div>
 <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
   <div class="cd-schedule__timeline">
     <ul id="test">
@@ -55,27 +71,35 @@
       <% @experts.each do |expert| %>
       <li class="cd-schedule__group">
         <div class="cd-schedule__top-info"><span><%= expert.lastName %></span></div>
-        <ul>
-
-          <% @timeSlots.where(:date => Date.today).each do |timeSlot|  %>
-          <% unless timeSlot.exp_procedures.where(:expert_id => expert.id).empty? %>
-          <li class="cd-schedule__event">
-            <a data-start="<%= timeSlot.startTime.to_s(:time) %>" data-end="<%= timeSlot.endTime.to_s(:time) %>" data-event="event-1" href="#0">
-              <em class="cd-schedule__name">
-                <% timeSlot.exp_procedures.where(:expert_id => expert.id).each do |expProcedure| %>
-                <%= expProcedure.procedure.title %> <br>
-                <% end %>
-              </em>
-            </a>
-          </li>
-          <% end %>
+        <ul class="cd-schedule__expert-time-line" data-attr-expert-id="<%= expert.id %>">
+          <% @timeSlots.where(:date => @date).each do |timeSlot|  %>
+            <% unless timeSlot.exp_procedures.where(:expert_id => expert.id).empty? %>
+            <li class="cd-schedule__event">
+              <a
+              data-start="<%= timeSlot.startTime.to_s(:time) %>"
+              <% if timeSlot.endTime %>
+                data-end="<%= timeSlot.endTime.to_s(:time) %>"
+              <% else %>
+                data-end="<%= timeSlot.startTime.to_s(:time) %>"
+              <% end %>
+              data-event="event-1" href="#0">
+                <em class="cd-schedule__name">
+                  Процедуры:
+                  <% timeSlot.exp_procedures.where(:expert_id => expert.id).each do |expProcedure| %>
+                    <%= expProcedure.procedure.title %>,
+                  <% end %>
+                  <br>
+                  Имя: <%= timeSlot.client_first_name %>
+                  <br>
+                  Номер телефона :<%= timeSlot.client_phone_number %>
+                </em>
+              </a>
+            </li>
+            <% end %>
           <% end %>
         </ul>
       </li>
       <% end %>
-
-
-
     </ul>
 
   <div class="cd-schedule-modal">

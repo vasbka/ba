@@ -1,28 +1,100 @@
-<p>
-  <strong>Имя:</strong>
-  <%= @expert.firstName %>
-</p>
+<div class="show-body">
+  <div class="show-body__picture-container show-body__dib">
+    <img src="<%= "/" + ApplicationController::PICTURE_FOLDER + "/experts/" + @expert.id.to_s + ".jpg" %>" alt="">
+  </div>
 
-<p>
-  <strong>Фамилия:</strong>
-  <%= @expert.lastName %>
-</p>
+  <div class="show-body__information show-body__dib">
+    <div class="information__field">
+      <div class="information__field title">Имя:</div>
+      <div class="information__field value"><%= @expert.firstName %></div>
+    </div>
 
-<p>
-  <strong>Отчество:</strong>
-  <%= @expert.secondName %>
-</p>
+    <div class="information__field">
+      <div class="information__field title">Фамилия:</div>
+      <div class="information__field value"><%= @expert.lastName %></div>
+    </div>
 
-<p>
-  <strong>Описание:</strong>
-  <%= @expert.description %>
-</p>
+    <div class="information__field">
+      <div class="information__field title">Отчество:</div>
+      <div class="information__field value"><%= @expert.secondName %></div>
+    </div>
 
-<p>
-  <strong>Номер телефона:</strong>
-  <%= @expert.phoneNumber %>
-</p>
+    <div class="information__field">
+      <div class="information__field title">Описание:</div>
+      <div class="information__field value"><%= @expert.description %></div>
+    </div>
 
-<% @expert.expertProcedures.each do |expertProcedure| %>
-  <%= Procedure.find(expertProcedure[:procedure_id])[:title] %> : <%= expertProcedure[:price] %>
-<% end %>
+    <div class="information__field">
+      <div class="information__field title">Номер телефона:</div>
+      <div class="information__field value"><%= @expert.phoneNumber %></div>
+    </div>
+
+    <div class="information__field">
+      <div class="information__field title">Процедуры:</div>
+      <div class="information__field value">
+        <table>
+          <tr>
+            <th>Название</th>
+            <th>Цена</th>
+            <th>Время</th>
+          </tr>
+          <% @expert.exp_procedures.each do |expertProcedure| %>
+          <tr>
+            <td>
+              <%= Procedure.find(expertProcedure[:procedure_id])[:title] %>
+            </td>
+            <td>
+              <%= expertProcedure[:price] %> грн.
+            </td>
+            <td>
+              <%= expertProcedure[:time_consume] %> минут.
+            </td>
+            <% end %>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="information__field">
+      <div class="information__field title">Записи на сегодня (<%= Date.today %>):</div>
+      <div class="information__field value">
+        <table>
+          <tr>
+            <th>Процедура</th>
+            <th>Цена</th>
+            <th>Время начала</th>
+            <th>Время конца</th>
+            <th>Имя</th>
+            <th>Телефон</th>
+          </tr>
+          <% @expert.time_slots.order(startTime: :asc).uniq.each do |timeSlot| %>
+            <tr>
+              <% if timeSlot.date == Date.today %>
+              <td>
+                <%= timeSlot.procedures.map(&:title).join(',')%>                
+              </td>
+              <td>
+                <%= timeSlot.price %>
+              </td>
+              <td>
+                <%= timeSlot.startTime.strftime('%H:%M') %>
+              </td>
+              <td>
+                <%= timeSlot.endTime.strftime('%H:%M') %>
+              </td>
+              <td>
+                <%= timeSlot.client_first_name %>
+              </td>
+              <td>
+                <%= timeSlot.client_phone_number %>
+              </td>
+            </tr>
+            <% end %>
+          <% end %>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+</div>

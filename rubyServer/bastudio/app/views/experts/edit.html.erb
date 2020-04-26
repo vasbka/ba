@@ -2,12 +2,4 @@
 
 <%= render 'form' %>
 
-<% @expert.expertProcedures.each do |expertProcedure| %>
-<%= Procedure.find(expertProcedure[:procedure_id])[:title] %> : <%= expertProcedure[:price] %>
-<%= button_to 'Удалить', expert_expProcedure_path(@expert, expertProcedure), method: :delete, :onclick => "return confirm('Точно нужно удалить?')" %>
-
-<% end %>
-
-<br>
-
 <%= link_to 'Back', experts_path %>

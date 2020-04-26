@@ -526,100 +526,99 @@ Math.easeInOutQuad = function (t, b, c, d) {
 }());
 
 //custom js
-var startTimeSelect = document.createElement('select');
-startTimeSelect.classList.add('time-select');
-//generate times
-for (var i = 0; i <= 1450; i += 15) {
-    hours = Math.floor(i / 60);
-    minutes = i % 60;
-    if (minutes < 10) {
-        minutes = '0' + minutes;
-    }
-		var startOpt = document.createElement('option');
-		startOpt.text = hours + ':' + minutes;
-		startOpt.classList.add(hours + '' + minutes);
-    startTimeSelect.appendChild(startOpt);
-}
 
-var times = document.getElementsByClassName('time');
+$(document).ready(function() {
 
-var timeRange = Array.from(times).map(function(item) {
-  var timeRectangle = item.getBoundingClientRect();
-  var range = {};
-  range.time = item.innerText;
-  range.top = timeRectangle.top;
-  range.bottom = timeRectangle.bottom;
-  return range;
-});
+		var times = document.getElementsByClassName('time');
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-var timeList = document.getElementsByClassName('timeline');
-for (let timeSlot of timeList) {
-	timeSlot.onclick = onTimeSlotClickHandler.bind(timeSlot);
-};
-
-function onTimeSlotClickHandler(event) {
-	var clickedItem = document.elementFromPoint(event.clientX, event.clientY)
-	if (clickedItem == this) {
-		modal.style.display = "block";
-		modal.style.zIndex = 100;
-		timeRange.forEach((item, i) => {
-			if (event.clientY >= item.top && event.clientY < item.bottom) {
-				handleSpecificTime(getClassNameForTime(item), getExpertIdFromItem(clickedItem));
-			}
+		var timeRange = Array.from(times).map(function(item) {
+		  var timeRectangle = item.getBoundingClientRect();
+		  var range = {};
+		  range.time = item.innerText;
+		  range.top = timeRectangle.top;
+		  range.bottom = timeRectangle.bottom;
+		  return range;
 		});
-	}
-};
 
-function getExpertIdFromItem(item) {
-	return item.getAttribute('data-attr-expert-id');
-}
+		// Get the modal
+		var modal = document.getElementById("create-time-slot-modal");
 
-function getClassNameForTime(item) {
-	return item && item.time.replace(':', '');
-}
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
 
-function handleSpecificTime(item, expertId) {
-	$.ajax({
-		type: 'GET',
-		url: '/experts/' + expertId + '/procedures.json',
-		dataType: 'json',
-		success: function(data) {
-			data.length == 0 ? handleZeroProceduresResult() : handleProceduresResult(data, item);
+		// When the user clicks the button, open the modal
+		var timeList = document.getElementsByClassName('cd-schedule__expert-time-line');
+		for (let timeSlot of timeList) {
+			timeSlot.onclick = onTimeSlotClickHandler.bind(timeSlot);
+		};
+
+		function onTimeSlotClickHandler(event) {
+			var clickedItem = document.elementFromPoint(event.clientX, event.clientY);
+			if (clickedItem == this) {
+				$('#procedures')[0].length = 0;
+				modal.style.display = "block";
+				modal.style.zIndex = 100;
+				timeRange.forEach((item, i) => {
+					if (event.pageY >= item.top && event.pageY < item.bottom) {
+						handleSpecificTime(getTime(item), getExpertIdFromItem(clickedItem));
+					}
+				});
+			}
+		};
+
+		function getExpertIdFromItem(item) {
+			return item.getAttribute('data-attr-expert-id');
 		}
-	});
-}
 
-var handleProceduresResult = function(data, className) {
-	var timeSelect = $('.startTimeWrapper')[0];
-	startTimeSelect.getElementsByClassName(className)[0].selected = true;
-	timeSelect.appendChild(startTimeSelect);
-	data.forEach((item, i) => {
-		$('#detailForm').show();
+		function getTime(item) {
+			return item && item.time;
+		}
 
-	});
-}
+		function handleSpecificTime(time, expertId) {
+			$.ajax({
+				type: 'GET',
+				url: '/experts/' + expertId + '/procedures.json',
+				dataType: 'json',
+				success: function(data) {
+					data.length == 0 ? handleZeroProceduresResult() : handleProceduresResult(data, time, expertId);
+				}
+			});
+		}
 
-var handleZeroProceduresResult = function(select) {
-	$('#detailForm').hide();
+		var handleProceduresResult = function(data, time, expertId) {
+			var hoursMinuts = time.split(':');
+			$('#detail_form_start_time_4i').val(hoursMinuts[0]);
+			$('#detail_form_start_time_5i').val(hoursMinuts[1]);
+			var procedures = $('#procedures')[0];
+			$('#expert_id')[0].value = expertId;
+			$('#detailForm').show();
+			data.forEach((item, i) => {
+				var procedure = document.createElement('option');
+				procedure.value = item.id;
+				procedure.textContent = item.title;
+				procedures.appendChild(procedure);
+			});
+		}
 
-}
+		var handleZeroProceduresResult = function(select) {
+			$('#detailForm').hide();
+			var procedures = $('#procedures')[0];
+			var procedure = document.createElement('option');
+			procedure.disabled = true;
+			procedure.textContent = 'Для этого мастера еще не добавлено ни одной процедуры.';
+			procedures.appendChild(procedure);
+		}
 
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+});

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_19_003549) do
+ActiveRecord::Schema.define(version: 2020_04_20_014923) do
 
   create_table "clients", force: :cascade do |t|
     t.string "firstName"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_04_19_003549) do
     t.string "phoneNumber"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "instagram"
   end
 
   create_table "exp_procedures", force: :cascade do |t|
@@ -26,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_04_19_003549) do
     t.integer "procedure_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "time_consume"
     t.index ["expert_id"], name: "index_exp_procedures_on_expert_id"
     t.index ["procedure_id"], name: "index_exp_procedures_on_procedure_id"
   end
@@ -47,6 +49,18 @@ ActiveRecord::Schema.define(version: 2020_04_19_003549) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "procedure_categories", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+  end
+
+  create_table "procedure_categories_procedures", id: false, force: :cascade do |t|
+    t.integer "procedure_id"
+    t.integer "procedure_category_id"
+    t.index ["procedure_category_id"], name: "index_procedure_categories_procedures_on_procedure_category_id"
+    t.index ["procedure_id"], name: "index_procedure_categories_procedures_on_procedure_id"
+  end
+
   create_table "procedures", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -61,8 +75,14 @@ ActiveRecord::Schema.define(version: 2020_04_19_003549) do
     t.date "date"
     t.time "startTime"
     t.time "endTime"
+    t.string "client_first_name"
+    t.string "client_phone_number"
+    t.string "additional"
+    t.integer "client_id"
+    t.index ["client_id"], name: "index_time_slots_on_client_id"
   end
 
   add_foreign_key "exp_procedures", "experts"
   add_foreign_key "exp_procedures", "procedures"
+  add_foreign_key "time_slots", "clients"
 end

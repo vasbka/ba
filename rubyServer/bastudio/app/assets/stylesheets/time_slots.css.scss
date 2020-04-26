@@ -22,8 +22,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
+p,,
 pre,
 a,
 abbr,
@@ -4228,4 +4227,13 @@ a {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.time-slot__previous-date,
+.time-slot__next-date {
+  display: inline-block;
+}
+
+.time-slot__next-date {
+  float: right;
 }
