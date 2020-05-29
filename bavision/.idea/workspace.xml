@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f252d8d-1c4a-41a2-b3c3-4fe26a272f2c" name="Default Changelist" comment="" />
+    <list default="true" id="8f252d8d-1c4a-41a2-b3c3-4fe26a272f2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bavision/command/MessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bavision/command/MessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bavision/command/commands/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bavision/command/commands/CommandType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bavision/storage/impl/JsonDbImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bavision/storage/impl/JsonDbImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bavision/BaVisionBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bavision/BaVisionBot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bavision/builder/KeyBoardBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bavision/builder/KeyBoardBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bavision/command/CommandHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bavision/command/CommandHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bavision/command/MessageHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bavision/command/MessageHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bavision/command/commands/CommandType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bavision/command/commands/CommandType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bavision/storage/impl/JsonDbImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bavision/storage/impl/JsonDbImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Specialist.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/Specialist.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/app/assets/stylesheets/experts.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/app/assets/stylesheets/experts.css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/app/controllers/experts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/app/controllers/experts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/app/controllers/time_slots_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/app/controllers/time_slots_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/app/models/expert.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/app/models/expert.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/app/views/experts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/app/views/experts/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/app/views/time_slots/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/app/views/time_slots/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rubyServer/bastudio/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../rubyServer/bastudio/db/schema.rb" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,45 +39,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="884">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Specialist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2786#2787#0" expanded="true" />
+                <element signature="e#2830#2831#0" expanded="true" />
+                <element signature="e#2879#2880#0" expanded="true" />
+                <element signature="e#2949#2950#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/TimeSlot.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="235">
+              <caret line="297" lean-forward="true" selection-start-line="297" selection-end-line="297" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,73 +69,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Service.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/commands/CommandType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state>
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1633#1634#0" expanded="true" />
-                <element signature="e#1702#1703#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Specialist.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/app/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bavision/storage/impl/JsonDbImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="49" selection-end-line="74" />
+            <state relative-caret-position="4845">
+              <caret line="300" column="25" selection-start-line="300" selection-start-column="25" selection-end-line="300" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,36 +106,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>previousId</find>
-      <find>inlineKeyboardButton1</find>
-      <find>inlineKeyboardButton2</find>
-      <find>keyboardButtonsRow1</find>
-      <find>firstRow</find>
-      <find>replyKeyboard</find>
-      <find>minStream</find>
-      <find>photoPath</find>
-      <find>show_specialist</find>
-      <find>previous</find>
-      <find>searchedId</find>
-      <find>parseTextMessage</find>
-      <find>default.jpg</find>
-      <find>command</find>
-      <find>generateRowWithBackToMainMenu</find>
-      <find>generaterowwith</find>
-      <find>DEFAULT_PICUTRE_FORMAT</find>
-      <find>DEFAULT_PICUTRE</find>
-      <find>specialistInformation</find>
-      <find>serviceInformation</find>
-      <find>&quot;/</find>
-      <find>storage</find>
-      <find>shownext</find>
-      <find>\s</find>
-      <find>textMessage</find>
-      <find>deprecated</find>
-      <find>baseScanPackage</find>
-      <find>objToSave</find>
-      <find>id</find>
-      <find>guava</find>
+      <find>продолжить</find>
+      <find>кут</find>
+      <find>ыныеуью</find>
+      <find>system.out.</find>
+      <find>InlineKeyboardButton</find>
+      <find>tuesday</find>
+      <find>sunday</find>
+      <find>weekRow</find>
+      <find>instance</find>
+      <find>now</find>
+      <find>dayOfWeek</find>
+      <find>choiceDate</find>
+      <find>target</find>
+      <find>CHOICE_DATE</find>
+      <find>11</find>
+      <find>ar</find>
+      <find>меню</find>
+      <find>phonenu</find>
+      <find>CONFIRM</find>
+      <find>user</find>
+      <find>number</find>
+      <find>phonenumber</find>
+      <find>oirigin</find>
+      <find>original</find>
+      <find>stringMessageHandler</find>
+      <find>dayNumber</find>
+      <find>orderInfo</find>
+      <find>Method threw 'java.lang.IllegalArgumentException' exception.</find>
+      <find>objects</find>
+      <find>Записи</find>
     </findStrings>
     <replaceStrings>
       <replace>LocalDateTime</replace>
@@ -182,25 +143,26 @@
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\odun3\.m2\repository\io\jsondb\jsondb-core\1.0.106\jsondb-core-1.0.106.jar!\io\jsondb</dir>
+      <dir>C:\Users\Vasyl_Honcharenko\Desktop\ba\ba\bavision\src\main\java\bavision</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/bavision/Bot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bavision/command/MessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/Work.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/BeatyView.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/util/Consts.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/util/Const.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/handler/AbstractHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/CommandType.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/command/CommandType.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/command/commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bavision/command/commands/CommandType.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/command/commands/AdminCommands.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/handler/SpecialistHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/handler/ServiceHandler.java" />
@@ -210,17 +172,25 @@
         <option value="$PROJECT_DIR$/src/main/java/bavision/util/Query.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/storage/impl/PostgreSqlStorage.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/Test.java" />
-        <option value="$PROJECT_DIR$/test/Specialist.json" />
-        <option value="$PROJECT_DIR$/src/main/java/bavision/storage/Storage.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/storage/impl/InMemoryStorageImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/app/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/storage/impl/JsonDbImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/Service.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/Specialist.java" />
         <option value="$PROJECT_DIR$/src/main/java/bavision/entity/TimeSlot.java" />
+        <option value="$PROJECT_DIR$/test/Specialist.json" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/util/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/consumer/AbstractServerConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/storage/Storage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/command/MessageTextHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/command/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/entity/MessageWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/command/commands/CommandType.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/entity/OrderInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java" />
       </list>
     </option>
   </component>
@@ -243,17 +213,17 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-543" />
+    <option name="y" value="1072" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,11 +234,6 @@
             <path>
               <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
               <item name="bavision" type="462c0819:PsiDirectoryNode" />
-              <item name="specialist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bavision" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,6 +256,43 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bavision" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bavision" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
@@ -301,24 +303,21 @@
               <item name="bavision" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bavision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bavision" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582767548921" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rubyServer/bastudio" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -352,6 +351,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bavision.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaVisionBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bavision.BaVisionBot" />
+      <module name="bavision" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bavision.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -401,6 +413,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.BaVisionBot" />
         <item itemvalue="Application.JsonDbImpl" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.PostgreSqlStorage" />
@@ -430,9 +443,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-543" y="1072" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36442953" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -443,20 +457,20 @@
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.4688385" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.43201134" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5533049" weight="0.2897196" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7329424" weight="0.43406022" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.4688385" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26705757" side_tool="true" weight="0.2647975" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4936034" weight="0.3281412" />
       <window_info anchor="bottom" id="Console" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" sideWeight="0.5064378" side_tool="true" weight="0.32871014" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49946696" weight="0.32917964" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
       <window_info anchor="right" id="PlantUML" order="0" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Word Book" order="2" side_tool="true" />
@@ -464,37 +478,64 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="7" sideWeight="0.49356222" weight="0.32871014" />
+      <window_info anchor="right" id="Maven" order="7" sideWeight="0.49356222" weight="0.3283582" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="10" sideWeight="0.5064378" side_tool="true" weight="0.32871014" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Project Explorer" order="7" weight="0.3295302" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info id="Job Explorer" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5533049" weight="0.2897196" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7329424" visible="true" weight="0.2647975" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26705757" side_tool="true" visible="true" weight="0.2647975" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4936034" weight="0.3281412" />
+      <window_info anchor="bottom" id="Console" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49946696" weight="0.32917964" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
+      <window_info anchor="right" id="PlantUML" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Word Book" order="2" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="7" sideWeight="0.49356222" weight="0.3283582" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="10" sideWeight="0.5064378" side_tool="true" weight="0.32871014" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
-          <line>126</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
-          <line>118</line>
+          <line>172</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java</url>
-          <line>46</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bavision/handler/ServiceHandler.java</url>
@@ -504,13 +545,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
-          <line>53</line>
+          <line>92</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
@@ -534,98 +569,562 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
-          <line>33</line>
+          <line>167</line>
           <properties />
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
+          <line>179</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
+          <line>274</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
+          <line>326</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
+          <line>308</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java</url>
+          <line>322</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java</url>
+          <line>310</line>
+          <properties />
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="callbackQuery.getData()" language="JAVA" />
-        <watch expression="message.split(System.lineSeparator())" language="JAVA" />
-        <watch expression="message" language="JAVA" />
-        <watch expression="message.split(&quot;\n&quot;)" language="JAVA" />
-        <watch expression="this.storage.getServices()" language="JAVA" />
+        <watch expression="target" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>JSONObject jsonObject1 = new JSONObject();
+jsonObject1.put(&quot;detail_form&quot;, new JSONObject());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).put(&quot;start_time(4i)&quot;, new JSONArray());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).getJSONArray(&quot;start_time(4i)&quot;).put(&quot;5&quot;);
+target.request().post(Entity.json(jsonObject1));</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSONObject jsonObject1 = new JSONObject();
+jsonObject1.put(&quot;detail_form&quot;, new JSONObject());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).put(&quot;start_time(4i)&quot;, new JSONArray());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).getJSONArray(&quot;start_time(4i)&quot;).put(&quot;5&quot;);
+jsonObject1.toString();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSONObject jsonObject1 = new JSONObject();
+jsonObject1.put(&quot;detail_form&quot;, new JSONObject());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).put(&quot;start_time(4i)&quot;, new JSONArray());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).getJSONArray(&quot;start_time(4i)&quot;).put(&quot;5&quot;);
+jsonObject1.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSONObject jsonObject1 = new JSONObject();
+jsonObject1.put(&quot;detail_form&quot;, new JSONObject());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).put(&quot;start_time(4i)&quot;, new JSONArray());
+jsonObject1.getJSONObject(&quot;detail_form&quot;).getJSONArray(&quot;start_time(4i)&quot;).put(&quot;5&quot;);
+target.request().post(Entity.json(jsonObject1))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>target.request().post(Entity.json(resultObject))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>target.queryParam(resultObject.toString()).request().post(Entity.json(resultObject))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>target.queryParam(&quot;detail_form&quot;, new String[]{&quot;start_time(4i)&quot;}).method(&quot;POST&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>target.queryParam(&quot;authenticity_token=lP7tycBo8yzoB11MI0fMAx8KNsBpzkUvRw20Ir2zRM%2FsfSRPaNuaBJmo5nzk%2FcAYKbzZWbG5DAun9SBn4hXLPA%3D%3D&amp;procedures%5B%5D=11&amp;detail_form%5Bstart_time(1i)%5D=2020&amp;detail_form%5Bstart_time(2i)%5D=5&amp;detail_form%5Bstart_time(3i)%5D=7&amp;detail_form%5Bstart_time(4i)%5D=16&amp;detail_form%5Bstart_time(5i)%5D=30&amp;client_phone_number=1&amp;client_first_name=1&amp;date=2020-05-07&amp;expert_id=74&amp;commit=%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C&quot;).request().header(&quot;Accept-Encoding&quot;, &quot;gzip&quot;).header(&quot;Content-Type&quot;, &quot;text/plain&quot;).header(&quot;X-Requested-With&quot;, &quot;XMLHttpRequest&quot;).header(&quot;Accept&quot;, &quot;*/*&quot;).method(&quot;POST&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>target.queryParam(&quot;authenticity_token=lP7tycBo8yzoB11MI0fMAx8KNsBpzkUvRw20Ir2zRM%2FsfSRPaNuaBJmo5nzk%2FcAYKbzZWbG5DAun9SBn4hXLPA%3D%3D&amp;procedures%5B%5D=11&amp;detail_form%5Bstart_time(1i)%5D=2020&amp;detail_form%5Bstart_time(2i)%5D=5&amp;detail_form%5Bstart_time(3i)%5D=7&amp;detail_form%5Bstart_time(4i)%5D=16&amp;detail_form%5Bstart_time(5i)%5D=30&amp;client_phone_number=1&amp;client_first_name=1&amp;date=2020-05-07&amp;expert_id=74&amp;commit=%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C&quot;).request().header(&quot;Accept-Encoding&quot;, &quot;gzip&quot;).header(&quot;Content-Type&quot;, &quot;text/plain&quot;).header(&quot;X-Requested-With&quot;, &quot;XMLHttpRequest&quot;).header(&quot;Accept&quot;, &quot;*&quot;).method(&quot;POST&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>this.storage.getServices()</expression-string>
+        <expression-string>target</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>message.split(&quot;\n&quot;)</expression-string>
+        <expression-string>messageOriginal.getChat().getFirstName()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>message.split(&quot;\r\n&quot;)</expression-string>
+        <expression-string>messageOriginal.getChat()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>message.split(System.lineSeparator())</expression-string>
+        <expression-string>messageOriginal</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>message</expression-string>
+        <expression-string>new SimpleDateFormat(&quot;hh:mm&quot;).parse(jsonObject.getString(&quot;startTime&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.time.temporal.TemporalField</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new SimpleDateFormat(&quot;hh:mm&quot;).format(new SimpleDateFormat(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS&quot;).parse(jsonObject.getString(&quot;startTime&quot;)))</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.time.temporal.TemporalField</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new SimpleDateFormat(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS&quot;).parse(jsonObject.getString(&quot;startTime&quot;)).getTime()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>callbackQuery.getData()</expression-string>
+        <expression-string>new SimpleDateFormat(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS&quot;).parse(jsonObject.getString(&quot;startTime&quot;))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>storage.getSpecialists()</expression-string>
+        <expression-string>new SimpleDateFormat(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;).parse(jsonObject.getString(&quot;startTime&quot;))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new FileInputStream(new File(&quot;ba.jpg&quot;))</expression-string>
+        <expression-string>new SimpleDateFormat(&quot;yyyy-MM-dd'T'HH:asdf&quot;).parse(jsonObject.getString(&quot;startTime&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>16</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>callbackQuery.getMessage().getText()</expression-string>
+        <expression-string>&quot;+380996097221328&quot;</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
       <expression>
-        <expression-string>update.getCallbackQuery()</expression-string>
+        <expression-string>JSONObject jsonObject1 = new JSONObject();
+jsonObject1.put</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        <state relative-caret-position="174">
+          <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/replykeyboard/ReplyKeyboardMarkup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/methods/send/SendPhoto.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/methods/PartialBotApiMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/handler/AbstractHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.2/telegrambots-meta-4.1.2.jar!/org/telegram/telegrambots/meta/api/methods/PartialBotApiMethod.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/replykeyboard/ReplyKeyboardRemove.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/bots/AbsSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="47" column="70" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="114" column="13" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/LinkageError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/methods/send/SendMessage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar!/javax/ws/rs/client/SyncInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-client/2.25.1/jersey-client-2.25.1.jar!/org/glassfish/jersey/client/JerseyInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10948">
+          <caret line="744" column="21" selection-start-line="744" selection-start-column="21" selection-end-line="744" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NoClassDefFoundError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/handler/SpecialistHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar!/javax/ws/rs/client/ClientBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/MessageTextHandler.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="1539" selection-start-line="1539" selection-end-line="1539" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/generics/LongPollingBot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/4.1.1/telegrambots-4.1.1.jar!/org/telegram/telegrambots/updatesreceivers/DefaultBotSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/replykeyboard/buttons/InlineKeyboardButton.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="76" column="64" lean-forward="true" selection-start-line="75" selection-end-line="76" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/MessageHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/MessageWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/10.0.1/guava-10.0.1.jar!/com/google/common/cache/CacheBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+          <folding>
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2860#2861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Specialist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/app/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20180813/json-20180813.jar!/org/json/JSONArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10829">
+          <caret line="692" column="29" selection-start-line="692" selection-start-column="29" selection-end-line="692" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/CallbackQuery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/Update.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="53" column="11" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="e#2226#2227#0" expanded="true" />
+            <element signature="e#2261#2262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/handler/ServiceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/time/DayOfWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+          <folding>
+            <element signature="e#7552#7553#0" expanded="true" />
+            <element signature="e#7588#7589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="1119" column="21" selection-start-line="1119" selection-start-column="21" selection-end-line="1119" selection-end-column="21" />
+          <folding>
+            <element signature="e#7247#7248#0" expanded="true" />
+            <element signature="e#7300#7301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/OrderInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/MessageEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/interfaces/BotApiObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/User.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding>
+            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://C:/Program Files/Java/jdk-11.0.2!/java.base/sun/security/ssl/SSLSocketImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="640" selection-start-line="640" selection-end-line="640" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="20" />
           <folding>
             <element signature="e#354#355#0" expanded="true" />
             <element signature="e#388#389#0" expanded="true" />
@@ -635,414 +1134,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/4.1.2/telegrambots-4.1.2.jar!/org/telegram/telegrambots/updatesreceivers/DefaultBotSession.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.1/telegrambots-meta-4.1.1.jar!/org/telegram/telegrambots/meta/api/objects/Chat.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/commands/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/commands/CommandType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/commands/AdminCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="227">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
           <folding>
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#2323#2324#0" expanded="true" />
+            <element signature="e#2353#2354#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/handler/SpecialistHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar!/javax/ws/rs/client/WebTarget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="173">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/default.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Properties.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1-sources.jar!/javax/ws/rs/core/MediaType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="139" column="6" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
+        <state relative-caret-position="165">
+          <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/storage/impl/PostgreSqlStorage.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/time/LocalDateTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3560#3561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/util/PropertiesHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/util/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="77" column="14" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106.jar!/io/jsondb/crypto/DefaultAESCBCCipher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/crypto/DefaultAESCBCCipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/query/ddl/DeleteOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/JsonDBConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/annotation/Id.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="552" column="18" selection-start-line="552" selection-start-column="18" selection-end-line="552" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/CollectionMetaData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="165" column="16" selection-start-line="165" selection-start-column="16" selection-end-line="165" selection-end-column="16" />
-          <folding>
-            <element signature="e#5437#5438#0" expanded="true" />
-            <element signature="e#5482#5483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar!/javax/annotation/Generated.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-565">
-          <caret line="114" column="26" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Service.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/function/BiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/JsonDBTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="709" column="18" selection-start-line="709" selection-start-column="18" selection-end-line="709" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.106/jsondb-core-1.0.106-sources.jar!/io/jsondb/JsonDBOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="266" column="11" selection-start-line="266" selection-start-column="11" selection-end-line="266" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="214" column="21" selection-start-line="214" selection-start-column="21" selection-end-line="214" selection-end-column="21" />
-          <folding>
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6340#6341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/storage/Storage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/handler/AbstractHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/handler/ServiceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/4.1.2/telegrambots-4.1.2.jar!/org/telegram/telegrambots/bots/TelegramLongPollingBot.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.1.2/telegrambots-meta-4.1.2.jar!/org/telegram/telegrambots/meta/ApiContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/4.1.2/telegrambots-4.1.2-sources.jar!/org/telegram/telegrambots/bots/TelegramLongPollingBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.4.0.2/telegrambots-meta-4.4.0.2.jar!/org/telegram/telegrambots/meta/TelegramBotsApi.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/storage/impl/InMemoryStorageImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2481#2482#0" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/storage/impl/JsonDbImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="49" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.7/jsondb-core-1.0.7.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsondb/jsondb-core/1.0.7/jsondb-core-1.0.7.jar!/io/jsondb/annotation/Document.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/app/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/Specialist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="501" column="12" selection-start-line="501" selection-start-column="12" selection-end-line="501" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bavision/BaVisionBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="884">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#2786#2787#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#2879#2880#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/specialist/0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Specialist.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/commands/CommandType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/entity/TimeSlot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/builder/KeyBoardBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="4845">
+          <caret line="300" column="25" selection-start-line="300" selection-start-column="25" selection-end-line="300" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bavision/command/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="297" lean-forward="true" selection-start-line="297" selection-end-line="297" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1126,6 +1288,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

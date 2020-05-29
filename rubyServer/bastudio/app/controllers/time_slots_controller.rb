@@ -1,4 +1,6 @@
 class TimeSlotsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def new
     @experts = Expert.all
     @expertsProcedures = ExpProcedure.all
@@ -59,6 +61,18 @@ class TimeSlotsController < ApplicationController
 
   def by_date
     render plain: params[:date]
+  end
+
+  def get_by_client_phone
+    respond_to  do |format|
+        format.json { render :json =>
+          TimeSlot.where('client_phone_number like ?', params[:phone_number])
+          .all
+          .filter { |timeSlot| timeSlot.date > Time.now}
+          .sort { |a,b| a.date <=> b.date }
+          .to_json
+        }
+    end
   end
 
   private

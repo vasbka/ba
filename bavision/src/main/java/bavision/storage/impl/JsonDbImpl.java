@@ -15,7 +15,7 @@ public class JsonDbImpl implements Storage {
 
     public JsonDbImpl() {
         idGenerators = new HashMap<>();
-        String dbFilesLocation = "test";
+        String dbFilesLocation = "buildPhoneNumberAccess";
         String baseScanPackage = "bavision.entity";
         jsonDBTemplate = new JsonDBTemplate(dbFilesLocation, baseScanPackage);
 

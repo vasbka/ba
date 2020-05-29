@@ -1,0 +1,2 @@
+class ExpertDaysController < ApplicationController
+end

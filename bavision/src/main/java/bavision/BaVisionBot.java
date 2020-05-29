@@ -1,6 +1,7 @@
 package bavision;
 
 import bavision.command.CommandHandler;
+import bavision.entity.MessageWrapper;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -12,7 +13,9 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 
+
 public class BaVisionBot extends TelegramLongPollingBot {
+
     private CommandHandler commandHandler;
 
     public BaVisionBot() {
@@ -25,10 +28,13 @@ public class BaVisionBot extends TelegramLongPollingBot {
         Message message;
         if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
+            MessageWrapper messageWrapper = new MessageWrapper();
+            messageWrapper.setAttribute("callbackdata", callbackQuery.getData());
+            messageWrapper.setAttribute("message", callbackQuery.getMessage());
             message = callbackQuery.getMessage();
-            handle = commandHandler.handle(callbackQuery.getData());
+            handle = commandHandler.handle(messageWrapper);
         } else {
-            handle = commandHandler.handle(update.getMessage().getText());
+            handle = commandHandler.handle(update.getMessage());
             message = update.getMessage();
         }
 
@@ -54,15 +60,20 @@ public class BaVisionBot extends TelegramLongPollingBot {
         execute(new DeleteMessage(message.getChatId(), messageId));
     }
 
-    public void handleSendMessage(PartialBotApiMethod handle, Message message) throws TelegramApiException {
-        ((SendMessage)handle).setChatId(message.getChatId());
-        execute((SendMessage)handle);
+    public void handleSendMessage(PartialBotApiMethod handle, Message message)  {
+        try {
+            ((SendMessage) handle).setChatId(message.getChatId());
+            execute((SendMessage) handle);
+        } catch (TelegramApiException e) {
+            System.out.println(e);
+        }
     }
 
     public void handleSendPhoto(PartialBotApiMethod handle, Message message) throws TelegramApiException {
         ((SendPhoto)handle).setChatId(message.getChatId());
         execute((SendPhoto)handle);
     }
+
 
     @Override
     public String getBotUsername() {
@@ -71,6 +82,6 @@ public class BaVisionBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "";
+        return "828148375:AAFO1_Lu4EFYQbVE5n_-xFoB-b5F1LH85uQ";
     }
 }

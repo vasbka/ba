@@ -34,7 +34,9 @@ class ExpertsController < ApplicationController
       file.write(uploaded_io.read)
     end
 
-    extractExpProcedure
+    saveExpProcedures
+    saveWorkingDays
+
 
     if @expert.save
       redirect_to @expert
@@ -46,8 +48,10 @@ class ExpertsController < ApplicationController
   def update
     @expert = Expert.find(params[:id])
     ExpProcedure.where(:expert_id => @expert.id).delete_all
+    ExpertDay.where(:expert_id => @expert.id).delete_all
 
-    extractExpProcedure
+    saveExpProcedures
+    saveWorkingDays
 
     if @expert.update(expert_params)
       redirect_to @expert
@@ -77,6 +81,7 @@ class ExpertsController < ApplicationController
     end
   end
 
+
   def get_possible_time_slots
     expertId = params[:expert_id]
     procedures = params[:procedures]
@@ -86,13 +91,34 @@ class ExpertsController < ApplicationController
       totalTime += expProcedure.time_consume.to_i
    end
    possibleTime = []
-   date = Date.today
-   render plain: date.minutes
-   # date.hour = 0
-   # date.minute = 0
-   # date.second = 0
-   # render plain: date
+   requestDay = params[:day_number].to_i
+   expert = Expert.where(:id => params[:expert_id]).first
+   day = expert.expert_days.where(:dayNumber => requestDay).first
+   startTime = day[:startTime].to_time
+   endTime = day[:endTime].to_time
+   timeSlots = expert.time_slots.where(:date => DateTime.now.change(day: requestDay).to_date).all
 
+   begin
+     timeSlots.all? { |timeSlot| (startTime + totalTime.minutes) < timeSlot.startTime || startTime > timeSlot.endTime } &&
+        possibleTime.push(startTime.strftime('%H:%M'))
+   end while ((startTime += 1800) + totalTime.minutes) < endTime
+
+   respond_to  do |format|
+       format.json { render :json =>
+         possibleTime.to_json
+       }
+   end
+  end
+
+  def get_working_days
+    respond_to  do |format|
+        format.json { render :json =>
+          Expert.where(:id => params[:expert_id])
+          .first
+          .expert_days
+          .to_json
+        }
+    end
   end
 
   private
@@ -105,7 +131,11 @@ class ExpertsController < ApplicationController
       params.require(:procedure)
     end
 
-    def extractExpProcedure
+    def days_params
+      params.require(:expert).permit(:days, :startTime, :endTime)
+    end
+
+    def saveExpProcedures
       @expProcedure = {}
       @expProcedure[:expert_id] = @expert[:id]
       procedure_params.each do |procedure|
@@ -115,6 +145,35 @@ class ExpertsController < ApplicationController
           @expProcedure[:time_consume] = procedure[1][:time]
           ExpProcedure.new(@expProcedure).save
         end
+      end
+    end
+
+    def saveWorkingDays
+     @workingDay = {}
+     @workingDay[:expert_id] = @expert[:id]
+     days_params[:days].split(',').each do |workingDay|
+       if workingDay.include?('-')
+         startDate = workingDay.split('-')[0].to_i
+         endDate = workingDay.split('-')[1].to_i
+         until startDate > endDate do
+           @workingDay[:dayNumber] = startDate
+           @workingDay[:startTime] = days_params[:startTime]
+           @workingDay[:endTime] = days_params[:endTime]
+           ExpertDay.new(@workingDay).save
+           startDate = startDate.to_i + 1
+         end
+       elsif
+         @workingDay[:dayNumber] = workingDay
+         @workingDay[:startTime] = days_params[:startTime]
+         @workingDay[:endTime] = days_params[:endTime]
+         ExpertDay.new(@workingDay).save
+       end
+     end
+
+     def time_iterate(start_time, end_time, step, &block)
+        begin
+          yield(start_time)
+        end while (start_time += step) <= end_time
       end
     end
 end

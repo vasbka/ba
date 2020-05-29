@@ -74,7 +74,7 @@
         <ul class="cd-schedule__expert-time-line" data-attr-expert-id="<%= expert.id %>">
           <% @timeSlots.where(:date => @date).each do |timeSlot|  %>
             <% unless timeSlot.exp_procedures.where(:expert_id => expert.id).empty? %>
-            <li class="cd-schedule__event">
+            <li class="cd-schedule__event">              
               <a
               data-start="<%= timeSlot.startTime.to_s(:time) %>"
               <% if timeSlot.endTime %>

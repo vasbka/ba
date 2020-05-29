@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_20_014923) do
+ActiveRecord::Schema.define(version: 2020_05_06_235157) do
 
   create_table "clients", force: :cascade do |t|
     t.string "firstName"
@@ -37,6 +37,16 @@ ActiveRecord::Schema.define(version: 2020_04_20_014923) do
     t.integer "exp_procedure_id"
     t.index ["exp_procedure_id"], name: "index_exp_procedures_time_slots_on_exp_procedure_id"
     t.index ["time_slot_id"], name: "index_exp_procedures_time_slots_on_time_slot_id"
+  end
+
+  create_table "expert_days", force: :cascade do |t|
+    t.integer "dayNumber"
+    t.time "startTime"
+    t.time "endTime"
+    t.integer "expert_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["expert_id"], name: "index_expert_days_on_expert_id"
   end
 
   create_table "experts", force: :cascade do |t|
@@ -84,5 +94,6 @@ ActiveRecord::Schema.define(version: 2020_04_20_014923) do
 
   add_foreign_key "exp_procedures", "experts"
   add_foreign_key "exp_procedures", "procedures"
+  add_foreign_key "expert_days", "experts"
   add_foreign_key "time_slots", "clients"
 end
